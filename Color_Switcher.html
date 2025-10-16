@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Switcher</title>
+    <style>
+        .button{
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            padding: 5px;
+            border: 5px solid #212121;
+        }
+       .buttonOne{
+         height: 100px;
+            width: 100px;
+            display: inline-block;
+            padding: 5px;
+            border: 5px solid #212121;
+            background-color: orange;
+       }     
+
+             
+        body{
+            background-color: rgb(109, 208, 228); color: #6c0df2;
+        }
+        #red{
+            background-color: red;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #black{
+            background-color: black;
+        }
+        #white{
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div><h1>Color Switcher</h1>
+        <div class="button" id="red"></div>
+        <div class="button" id="blue"></div>
+        <div class="button" id="yellow"></div>
+        <div class="button" id="black"></div>
+        <div class="button" id="white"></div>
+        <div class="buttonOne" id="orange"></div>
+    </div>
+</body>
+    <script>
+        const body = document.querySelector('body')
+        const button = document.querySelectorAll('.button')
+        button.forEach (function (button) {
+            button.addEventListener('click', function (e){
+                if (e.target.id === 'red') {
+                    body.style.backgroundColor = e.target.id
+                    // alert('Click OK to turn it into RED!')
+                }
+                    if (e.target.id === 'blue') {
+                    body.style.backgroundColor = e.target.id
+                    // alert('Click OK to turn it into BLUE!')
+                }
+                if (e.target.id === 'yellow') {
+                    body.style.backgroundColor = e.target.id
+                    // alert('Click OK to turn it into YELLOW!')
+                }
+                if (e.target.id === 'black') {
+                    body.style.backgroundColor = e.target.id
+                    alert('Click OK to turn it into BLACK!')
+                }
+                if (e.target.id === 'white') {
+                    body.style.backgroundColor = e.target.id
+                    // alert('Click OK to turn it into WHITE!')
+                }
+                
+            })
+        })
+    </script>
+    <script>
+        const buttonOne = document.querySelector('.buttonOne')
+        const bodyOne = document.querySelector('body')
+         buttonOne.addEventListener('mouseenter', function(e){
+            if (e.target.id ==="orange") {
+                bodyOne.style.backgroundColor = e.target.id
+            }
+           })
+            buttonOne.addEventListener('mouseleave', function(e){
+                 bodyOne.style.backgroundColor = "rgb(109, 208, 228)"
+            }
+        )
+    </script>
+
+</html>
