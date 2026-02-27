@@ -9,42 +9,30 @@ This project demonstrates fundamental concepts of DOM manipulation, event handli
 🚀 Features
 
 Clickable color boxes to change background color
-
 Hover-based color switching (orange box)
-
 Event listeners for user interaction
-
 Simple and responsive UI
-
 Beginner-friendly DOM manipulation example
 
 🛠️ Technologies Used
 
 HTML → Structure of the webpage
-
 CSS → Styling and layout of color buttons
-
 JavaScript → Event handling and background color switching
 
 ⚙️ How It Works
 ✅ Click Events
 
 Each colored box has a unique ID
-
 JavaScript selects all elements with class .button
-
 When clicked, the event listener:
-
 Detects the clicked element
-
 Reads its ID
-
 Changes the body background color accordingly
 
+
 ✅ Hover Events (Orange Box)
-
 mouseenter → Background changes to orange
-
 mouseleave → Background resets to default color
 
 📂 Project Structure
@@ -54,42 +42,28 @@ Color-Switcher/
 └── README.md             # Project documentation
 ▶️ How to Run
 
+
 Download or clone the repository
-
 Open Color_Switcher.html in any web browser
-
 Click or hover over the color boxes to see the effect
+
 
 🎯 Learning Outcomes
 
 Understanding DOM selection methods
-
 Working with click and hover events
-
 Manipulating CSS dynamically using JavaScript
-
 Creating interactive UI components
+
 
 💡 Future Improvements
 
 Add transition animations for smoother color change
-
 Add more color options
-
 Convert inline CSS into separate stylesheet
-
 Implement random color generator
-
 Make mobile-friendly UI
 
-Now, if you want to rename it to index.html instead (which is usually cleaner for GitHub Pages and hosting):
 
-On Windows:
 
-Right-click Color_Switcher.html
 
-Click Rename
-
-Change it to index.html
-
-Press Enter
